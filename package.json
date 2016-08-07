@@ -1,0 +1,32 @@
+{
+  "name": "nucss",
+  "version": "0.1.0",
+  "description": "Modern, lightweight and customizable SCSS Framework.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qarzak/nuCSS.git"
+  },
+  "keywords": [
+    "scss",
+    "framework",
+    "modern",
+    "customizable",
+    "lightweight"
+  ],
+  "author": "William Montagnon @Qarzak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Qarzak/nuCSS/issues"
+  },
+  "homepage": "https://github.com/Qarzak/nuCSS#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-sass": "^2.3.2"
+  }
+}

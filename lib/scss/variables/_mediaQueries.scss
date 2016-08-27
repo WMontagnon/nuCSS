@@ -1,0 +1,10 @@
+// Media Queries
+$small: "600px";
+$medium: "1200px";
+
+
+$small-only: "only screen and (max-width : #{$small})";
+$medium-up: "only screen and (min-width : #{$small})";
+$medium-only: "only screen and (min-width : #{$small}) and (max-width : #{$medium})";
+$medium-down: "only screen and (max-width : #{$medium})";
+$large-only: "only screen and (min-width : #{$medium})";

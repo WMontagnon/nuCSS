@@ -17,6 +17,13 @@ There is a Gulpfile that can please all your dreams (as long as it's CSS and JS 
 
 ## Contribute
 
+To contribute, there are only two rules:  
+
+* No Float !
+* Make the most out of SASS
+
+Steps to contribute :
+
 1. Fork it!
 2. Create your feature branch: feature/NEW_FEATURE
 3. Commit your changes

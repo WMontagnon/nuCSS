@@ -10,10 +10,17 @@ Modern, lightweight and customizable SCSS Framework.
 
 ## Usage
 
-There is a Gulpfile that can please all your dreams (as long as it's CSS and JS generation)
+There is a Gulpfile that can please all your dreams (as long as it's CSS and JS generation related)
 
 * Run `gulp` to start a BrowserSync and a file watcher session showing you the kitchensink live.
 * Run `gulp build` to build the project into the dist folder.
+
+## Project Architecture
+
+* The `/assets` folder contains place for you to put your customized SCSS and JS
+* The `/dist` folder is the place where generated JS and CSS files will end up.
+* The `/gulp` folder contains gulp tasks grouped by language.
+* The `/lib` folder contains all the nuCSS Framework files.
 
 ## Contribute
 

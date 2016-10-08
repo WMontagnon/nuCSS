@@ -21,6 +21,7 @@ gulp.task('watch', function() {
   gulp.watch('assets/scss/**/*.scss', ['sass:theme', $.browserSync.reload]);
   gulp.watch('lib/js/**/*.js', ['javascript:lib', $.browserSync.reload]);
   gulp.watch('assets/js/**/*.js', ['javascript:theme', $.browserSync.reload]);
+  gulp.watch('dist/index.html', [$.browserSync.reload]);
 });
 
 // Runs all of the above tasks and then waits for files to change

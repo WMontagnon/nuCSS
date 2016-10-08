@@ -3,6 +3,7 @@
   width: 100%;
   max-width: $rowWidth;
   font-size: 0;
+  margin: 0 auto;
 }
 
 @for $i from 1 through $columnsCount {
@@ -11,7 +12,7 @@
     display: inline-block;
     vertical-align: top;
     font-size: 1rem;
-    width: calc( #{$i} * 100% / #{$columnsCount} - #{$columnGutter});
+    width: calc( (100% - #{(($columnsCount / $i * 2) * $columnGutter) - 2}) /  #{$columnsCount / $i});
     margin: 0 $columnGutter;
     &:first-child{
         margin-left: 0;
@@ -20,18 +21,25 @@
         margin-right: 0;
     }
     @if($columnsCount % $i == 0) {
-      &:nth-child(#{$columnsCount/$i + 1}){
+      &:nth-child(#{$columnsCount/$i}n + #{$columnsCount/$i + 1}){
           margin-left: 0;
       }
-      &:nth-child(#{$columnsCount/$i}){
+      &:nth-child(#{$columnsCount/$i}n + #{$columnsCount/$i}){
           margin-right: 0;
       }
     }
     @media #{$small-only} {
       @if $i <= 4 {
-        width: 50%;
+        width: calc(50% - #{$columnGutter});
+        &:nth-child(even){
+          margin-right: 0;
+        }
+        &:nth-child(odd){
+          margin-left: 0;
+        }
       } @else {
         width: 100%;
+        margin: 0;
       }
     }
   }

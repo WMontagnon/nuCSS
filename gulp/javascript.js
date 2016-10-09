@@ -6,7 +6,7 @@ var $ = require('gulp-load-plugins')({
 gulp.task('javascript', ['javascript:lib','javascript:theme']);
 
 gulp.task('javascript:lib', () =>
-    gulp.src('lib/js/**/*.js')
+    gulp.src('assets/js/lib/**/*.js')
         .pipe($.sourcemaps.init())
         .pipe($.babel({
             presets: ['es2015']

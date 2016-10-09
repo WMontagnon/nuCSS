@@ -8,7 +8,7 @@ var port = process.env.SERVER_PORT || 3000;
 $.requireDir('../../gulp');
 
 // Builds the documentation and framework files
-gulp.task('build', ['sass', 'javascript']);
+gulp.task('build', ['sass', 'javascript', 'sassdoc']);
 
 // Starts a BrowerSync instance
 gulp.task('serve', ['build'], function(){

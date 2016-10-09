@@ -18,9 +18,10 @@ There is a Gulpfile that can please all your dreams (as long as it's CSS and JS 
 ## Project Architecture
 
 * The `/assets` folder contains place for you to put your customized SCSS and JS
+* The `/assets/scss/lib` folder contains all the nuCSS Framework scss files.
+* The `/assets/js/lib` folder contains all the nuCSS Framework js files.
 * The `/dist` folder is the place where generated JS and CSS files will end up.
 * The `/gulp` folder contains gulp tasks grouped by language.
-* The `/lib` folder contains all the nuCSS Framework files.
 
 ## Contribute
 

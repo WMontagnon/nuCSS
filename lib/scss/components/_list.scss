@@ -1,0 +1,17 @@
+// --------------------
+// List styles
+// --------------------
+
+ul, ol {
+	display: block;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}
+
+ul {
+	list-style: none;
+}
+
+ol {
+	list-style: circle outside;	
+}

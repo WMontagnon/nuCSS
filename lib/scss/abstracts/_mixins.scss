@@ -1,4 +1,10 @@
-/* TO BE DELETED - MOVED TO abstracts/mixins */
+// ------------------
+//  General Mixins
+// ------------------
+
+// ------------------
+//  Grids Mixin
+// ------------------
 
 @mixin grid($columnNumber){
   @for $i from 1 through $columnNumber {

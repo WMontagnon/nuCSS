@@ -1,0 +1,40 @@
+// ----------------------
+// Variable Declarations
+// ----------------------
+
+/// Breakpoints
+$small: 600px;
+$medium: 1200px;
+
+/// Colors
+$brand-primary: hsla(209.9, 100%, 47.6%, 1); /* blue */
+
+$black: hsla(0, 0%, 1.2%, 1) !default;
+$gray: hsla(208.4,7.8%,47.6%, 1); /* cement-gray */
+$white: hsla(0, 0, 100%, 1);
+
+
+$bg-code: hsla(0, 0%, 94.9%, 1); /* light-gray */
+
+/// Fonts
+
+$text-code-stack: 'Menlo' sans-serif;
+$text-content-stack: sans-serif;
+
+
+
+/// Grid variables
+$rowWidth: 1200px;
+$columnsCount: 12;
+$columnGutter: 5px;
+
+
+/// Letter Spacing
+$letter-spacing-normal: 3px;
+
+/// Media Queries
+$small-only: "only screen and (max-width : #{$small})";
+$medium-up: "only screen and (min-width : #{$small})";
+$medium-only: "only screen and (min-width : #{$small}) and (max-width : #{$medium})";
+$medium-down: "only screen and (max-width : #{$medium})";
+$large-only: "only screen and (min-width : #{$medium})";

@@ -1,0 +1,45 @@
+// --------------------
+// Site Section styles
+// --------------------
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	flex: 1;
+}
+
+.section {
+	border: 1px solid $brand-primary;
+	margin-top: 1em;
+
+	/* Block elements */
+	&__title {
+		font-size: 2em;
+	}
+
+	/* Section Modifiers */
+	&--heading {
+		@extend .section;
+	}
+
+	&--paragraph {
+		@extend .section;
+	}
+
+	&--list {
+		@extend .section;
+	}
+
+	&--blockquote {
+		@extend .section;
+	}
+
+	&--code {
+		@extend .section;
+	}
+
+	&--links {
+		@extend .section;
+	}
+}

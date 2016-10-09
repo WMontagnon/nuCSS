@@ -1,0 +1,10 @@
+// --------------------
+// Blockquote styles
+// --------------------
+
+blockquote {
+	&::before {
+		content: ' " ';
+		font-size: 1em;
+	}
+}

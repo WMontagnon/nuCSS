@@ -1,4 +1,22 @@
-@import 'variables/variables';
-@import 'functions/functions';
-@import 'mixins/mixins';
-@import 'components/components';
+@charset 'utf-8';
+
+/*@import 'variables/variables';*/ /* TO BE DELETED */
+/*@import 'functions/functions';*/ /* TO BE DELETED */
+/*@import 'mixins/mixins';*/  /* TO BE DELETED */
+
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/blockquote';
+@import 'components/code';
+@import 'components/grid';
+@import 'components/link';
+@import 'components/list';
+
+@import 'layouts/footer';
+@import 'layouts/header';
+@import 'layouts/section';

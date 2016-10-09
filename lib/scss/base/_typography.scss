@@ -32,8 +32,13 @@ h6 {
  font-size: 3em;
 }
 
-p {
+p, code, pre, blockquote {
 	font-size: 1.2em;
 	letter-spacing: 1px;
 	margin-left: 10px;
+}
+
+ul, ol {
+	font-size: 1.2em;
+	letter-spacing: 1px;
 }

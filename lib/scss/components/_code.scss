@@ -1,7 +1,14 @@
 // --------------------
-// List styles
+// Code styles
 // --------------------
 
 pre, code {
 	background: $bg-code;
+	font-style: $code-font-stack;
+}
+
+
+pre {
+	white-space: pre-line;
+	margin-right: 10px;
 }

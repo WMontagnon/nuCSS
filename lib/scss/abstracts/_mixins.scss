@@ -3,9 +3,15 @@
 // ------------------
 
 // ------------------
+//  Links Mixin
+// ------------------
+
+
+// ------------------
 //  Grids Mixin
 // ------------------
 
+/// @param {Integer}
 @mixin grid($columnNumber){
   @for $i from 1 through $columnNumber {
     .col#{$i} {

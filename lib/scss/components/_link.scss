@@ -15,5 +15,6 @@ a {
 	&:focus,
 	&:active {
 		color: $gray;
+		text-decoration: underline;
 	}
 }

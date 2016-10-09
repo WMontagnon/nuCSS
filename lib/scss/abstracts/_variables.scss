@@ -3,23 +3,32 @@
 // ----------------------
 
 /// Breakpoints
-$small: 600px;
-$medium: 1200px;
+/// @type Length
+$small: 600px !default;
+$medium: 1200px !default;
 
-/// Colors
+/// Colors - Brand
+/// @type Color
 $brand-primary: hsla(209.9, 100%, 47.6%, 1); /* blue */
 
+
+/// Colors - General
+/// @type Color
 $black: hsla(0, 0%, 1.2%, 1) !default;
-$gray: hsla(208.4,7.8%,47.6%, 1); /* cement-gray */
-$white: hsla(0, 0, 100%, 1);
+$gray: hsla(208.4,7.8%,47.6%, 1) !default; /* cement-gray */
+$white: hsla(0, 0, 100%, 1) !default;
 
 
-$bg-code: hsla(0, 0%, 94.9%, 1); /* light-gray */
+/// Colors - Background
+/// @type Color
+$bg-code: hsla(0, 0%, 94.9%, 1) !default; /* light-gray */
+
 
 /// Fonts
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
-$text-code-stack: 'Menlo' sans-serif;
-$text-content-stack: sans-serif;
 
 
 

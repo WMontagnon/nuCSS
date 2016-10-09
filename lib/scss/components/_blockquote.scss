@@ -3,8 +3,12 @@
 // --------------------
 
 blockquote {
+	font-style: italic;	
+	
 	&::before {
 		content: ' " ';
-		font-size: 1em;
+	}
+	&::after {
+		content: ' " ';
 	}
 }

@@ -1,0 +1,32 @@
+.auto-grid{
+  position: relative;
+  width: 100%;
+  max-width: $rowWidth;
+  font-size: 0;
+  margin: 0 auto;
+
+  .col{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1rem;
+    margin: 0 $columnGutter;
+    &:first-child{
+        margin-left: 0;
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+  }
+
+  .col:first-child:nth-last-child(1) {
+    width: 100%;
+  }
+
+  @for $i from 2 through $autoGridMaxColumns {
+    .col:first-child:nth-last-child(#{$i}), .col:first-child:nth-last-child(#{$i}) ~ .col {
+      width: calc( (100% - #{(($i * 2) * $columnGutter) - (2 * $columnGutter)}) / #{$i});
+    }
+  }
+
+}

@@ -1,0 +1,48 @@
+// --------------------
+// Typography styles
+// --------------------
+
+h6, h5, h4, h3, h2, h1 {
+	color: $black;
+	letter-spacing: $letter-spacing-heading;
+	margin-left: $margin-normal;
+}
+
+h1 {
+	font-size: $font-xxlg;
+}
+
+h2 {
+	font-size: $font-xlg;
+}
+
+h3 {
+	font-size: $font-lg;
+}
+
+h4 {
+	font-size: $font-md;
+}
+
+h5, h6 {
+	font-size: $font-sm;
+}
+
+p, code, pre, blockquote {
+	font-size: $font-xsm;
+	letter-spacing: letter-spacing-text;
+	margin-left: $margin-normal;
+}
+
+small {
+  font-size: $font-xxsm;
+}
+
+ul, ol {
+	font-size: $font-xsm;
+	letter-spacing: letter-spacing-text;
+}
+
+ul, ol, li {
+	margin-left: $margin-normal;
+}

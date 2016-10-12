@@ -1,0 +1,10 @@
+.header {
+	flex: none;
+	border: 1px solid $brand-primary;
+
+	&__title {	
+		color: $brand-primary;
+		text-align: center;
+		font-size: 2em;
+	}
+}

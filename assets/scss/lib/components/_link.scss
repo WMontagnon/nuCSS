@@ -1,0 +1,20 @@
+// --------------------
+// Link styles
+// --------------------
+
+a {
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-top: 0.2em;
+	display: block;
+	color: $brand-primary;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $gray;
+		text-decoration: underline;
+	}
+}

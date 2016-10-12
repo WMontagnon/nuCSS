@@ -1,0 +1,15 @@
+// --------------------
+// List styles
+// --------------------
+
+ul, ol {
+	display: block;
+}
+
+ul {
+	list-style: none;
+}
+
+ol {
+	list-style: circle outside;	
+}

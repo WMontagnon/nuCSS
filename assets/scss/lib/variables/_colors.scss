@@ -1,0 +1,17 @@
+// Colors //
+
+/// Colors - Brand
+/// @type Color
+$brand-primary: hsla(209.9, 100%, 47.6%, 1); /* blue */
+
+
+/// Colors - General
+/// @type Color
+$black: hsla(0, 0%, 1.2%, 1) !default;
+$gray: hsla(208.4,7.8%,47.6%, 1) !default; /* cement-gray */
+$white: hsla(0, 0, 100%, 1) !default;
+
+
+/// Colors - Background
+/// @type Color
+$bg-code: hsla(0, 0%, 94.9%, 1) !default; /* light-gray */

@@ -23,15 +23,15 @@
         margin-right: 0;
     }
     @if($columnsCount % $i == 0) {
-      &:nth-child(#{$columnsCount/$i}n + #{$columnsCount/$i + 1}){
+      &:nth-child(#{$columnsCount / $i}n + #{$columnsCount / $i + 1}){
           margin-left: 0;
       }
-      &:nth-child(#{$columnsCount/$i}n + #{$columnsCount/$i}){
+      &:nth-child(#{$columnsCount / $i}n + #{$columnsCount / $i}){
           margin-right: 0;
       }
     }
     @media #{$small-only} {
-      @if $i <= 4 {
+      @if $i <= ($columnsCount / 3) {
         width: calc(50% - #{$columnGutter});
         &:nth-child(even){
           margin-right: 0;

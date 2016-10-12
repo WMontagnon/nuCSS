@@ -1,6 +1,5 @@
 // Grids Mixin //
 
-@mixin grid($columnNumber){
 @mixin grid($columnNumber, $gutter:$columnGutter){
   position: relative;
   width: 100%;

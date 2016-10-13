@@ -1,20 +1,110 @@
-// Typography //
+////
+/// File Labels for Typography
+/// @group Typography
+/// @author nuCSS
+////
 
-/// Font Size
-/// @type Number
+/// The largest available font size useful for banners, titles, and headers
+/// @name Extra Extra Large Font Size
+/// @example
+///    // On an individual element
+///    .your-element {
+///	      font-size: $font-xxlg;
+///	   }
+///
+///    // In a mixin
+///    .other-element {
+///       @include your-mixin($font-xxlg);
+///    }
 $font-xxlg: 5.2em !default;
+
+/// A large font size useful for header text
+/// @name Extra Large Font Size
+/// @example
+///    // On an individual element
+///    .your-element {
+///	      font-size: $font-xlg;
+///	   }
+///
+///    // In a mixin
+///    .other-element {
+///       @include your-mixin($font-xlg);
+///    }
 $font-xlg: 4em !default;
+
+/// A large font size useful for header text and sub headers
+/// @name Large Font Size
+/// @example
+///    // On an individual element
+///    .your-element {
+///	      font-size: $font-lg;
+///	   }
+///
+///    // In a mixin
+///    .other-element {
+///       @include your-mixin($font-lg);
+///    }
 $font-lg: 2.8em !default;
+
+/// A medium font useful for body text
+/// @name Medium Font Size
+/// @example
+///    // On an individual element
+///    .your-element {
+///	      font-size: $font-md;
+///	   }
+///
+///    // In a mixin
+///    .other-element {
+///       @include your-mixin($font-md);
+///    }
 $font-md: 3.4em !default;
+
+/// A small font useful for some body text and small informational pieces
+/// @name Small Font Size
+/// @example
+///    // On an individual element
+///    .your-element {
+///	      font-size: $font-sm;
+///	   }
+///
+///    // In a mixin
+///    .other-element {
+///       @include your-mixin($font-sm;
+///    }
 $font-sm: 2.2em !default;
+
+/// A small font useful for small informational pieces, descriptions, and footers
+/// @name Extra Small Font Size
+/// @example
+///    // On an individual element
+///    .your-element {
+///	      font-size: $font-xsm;
+///	   }
+///
+///    // In a mixin
+///    .other-element {
+///       @include your-mixin($font-xsm);
+///    }
 $font-xsm: 1em !default;
+
+/// The smallest text size useful for descriptions, footers, and disclaimers
+/// @name Extra Extra Small Font Size
+/// @example
+///    // On an individual element
+///    .your-element {
+///	      font-size: $font-xxsm;
+///	   }
+///
+///    // In a mixin
+///    .other-element {
+///       @include your-mixin($font-xxsm);
+///    }
 $font-xxsm: 0.2em !default;
 
-/// Letter Spacing
-/// @type Number
+
 $letter-spacing-heading: 3px;
 $letter-spacing-text: 1px;
 
-/// Margins
-/// @type Number
+
 $margin-normal: 10px;

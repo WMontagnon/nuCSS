@@ -1,17 +1,63 @@
-// Colors //
+////
+/// File Labels for Colors
+/// @group Colors
+/// @author nuCSS
+////
 
-/// Colors - Brand
-/// @type Color
+/// Primary brand color.
+/// @name Brand Primary
+/// @example
+///    // On a text element as a font color
+///    h1, h2, h3, a, p, small {
+///       color: $brand-primary
+///    }
+///    
+///    // As a border or background color
+///    .your-element {
+///       background-color: $brand-primary;
+///       border: 1px solid $brand-primary;
+///    }
+///
+///    // To lighten or darken the color, larger the number the lighter or darker
+///    .other-element {
+///       color: lighten($brand-primary, 10);
+///       background-color: darken($brand-primary, 10);
+///    }
+///    
+///    
+///    
 $brand-primary: hsla(209.9, 100%, 47.6%, 1); /* blue */
 
 
-/// Colors - General
-/// @type Color
+/// General theme color (black)
+/// @name General Color Black
+/// @example
+///    .your-element {
+///       color: $black;
+///    }
 $black: hsla(0, 0%, 1.2%, 1) !default;
+
+/// General theme color (gray)
+/// @name General Color Gray
+/// @example
+///    .your-element {
+///       color: $gray;
+///    }
 $gray: hsla(208.4,7.8%,47.6%, 1) !default; /* cement-gray */
+
+/// General theme color (white)
+/// @name General Color White
+/// @example
+///    .your-element {
+///       color: $white;
+///    }
 $white: hsla(0, 0, 100%, 1) !default;
 
 
-/// Colors - Background
-/// @type Color
+/// The background color of the code blocks
+/// @name Code Background Color
+/// @example
+///    .your-code-element {
+///       color: $bg-code;
+///    }
 $bg-code: hsla(0, 0%, 94.9%, 1) !default; /* light-gray */

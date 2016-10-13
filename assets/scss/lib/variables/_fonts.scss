@@ -1,6 +1,33 @@
-// Fonts //
+////
+/// File Labels for Fonts
+/// @group Fonts
+/// @author nuCSS
+////
 
-/// Font Family
-/// @type List
+/// Font stack used for code blocks
+/// @name Code Font Stack
+/// @example
+///    // On a text element or parent element
+///    .your-element {
+///       font-family: $code-font-stack;
+///    }
+///    
+///    // In a mixin
+///    .another-element {}
+///       @include your-mixin($code-font-stack);
+///    }
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+/// Font stack used for regular text
+/// @name Regular Text Font Stack
+/// @example
+///    // On a text element or parent element
+///    .your-element {
+///       font-family: $text-font-stack;
+///    }
+///    
+///    // In a mixin
+///    .another-element {}
+///       @include your-mixin($text-font-stack);
+///    }
 $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;

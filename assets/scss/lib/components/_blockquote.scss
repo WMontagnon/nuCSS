@@ -3,8 +3,8 @@
 // --------------------
 
 blockquote {
-	font-style: italic;	
-	
+	font-style: italic;
+
 	&::before {
 		content: ' " ';
 	}

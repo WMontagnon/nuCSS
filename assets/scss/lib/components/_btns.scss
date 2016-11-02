@@ -1,0 +1,38 @@
+// --------------------
+// Button styles
+// --------------------
+
+button {
+	border-radius: 4px;
+	margin: 10px 10px;
+	width: 95px;
+	height: 33px;
+	letter-spacing: 2.2px;
+	font-size: 15px;
+	color: $white;
+	border: 1px solid;
+	@include box-shadow-btn($gray);
+}
+
+.btn {
+
+	&--default {
+		background: $btn-default;
+	}
+
+	&--info {
+		background: $btn-info;
+	}
+
+	&--success {
+		background: $btn-success;
+	}
+
+	&--warning {
+		background: $btn-warning;
+	}
+
+	&--error {
+		background: $btn-error;
+	}
+}

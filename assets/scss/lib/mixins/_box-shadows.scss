@@ -1,0 +1,14 @@
+/// Box Shadows
+/// Mixin to add box-shadow effect to buttons
+/// according to their colors
+/// @author nuCSS
+/// @access public
+/// @example scss - Box shadow btn mixin
+///		.your-code-elment {
+///			@include box-shadow-btn($btn-info);
+///		}
+/// 	// box-shadow: 2px 2px 2px 2px $btn-info;
+@mixin box-shadow-btn($color) {
+	box-shadow: 2px 2px 2px 2px $color;
+}
+

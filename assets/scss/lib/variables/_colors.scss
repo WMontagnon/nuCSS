@@ -1,6 +1,7 @@
 ////
 /// File Labels for Colors
 /// @group Colors
+/// @access public
 /// @author nuCSS
 ////
 
@@ -61,3 +62,18 @@ $white: hsla(0, 0, 100%, 1) !default;
 ///       color: $bg-code;
 ///    }
 $bg-code: hsla(0, 0%, 94.9%, 1) !default; /* light-gray */
+
+
+/// The background color of the button
+/// @name button-[default|info|success|warning|error]
+/// @see General Color Gray
+/// @see Brand Primary
+/// @example
+///			.your-code-element {
+///				background: $btn-default; 
+///			}
+$btn-default: $gray !default;                       /* light gray */
+$btn-info: $brand-primary !default;                 /* blue */
+$btn-success: hsla(149.9, 100%, 47.6%, 1) !default; /* lime green */
+$btn-warning: hsla(45.1,100%,67.6%, 1) !default;    /* light yellow */
+$btn-error: hsla(359.8, 100%, 47.6%, 1) !default;   /* red */

@@ -46,7 +46,32 @@
 	&--forms {
 		@extend .section;
 	}
+
 	&--grid {
+		@extend .section;
+	}
+
+	&--cards {
+		@extend .section;
+	}
+
+	&--table {
+		@extend .section;
+	}
+
+	&--sections {
+		@extend .section;
+	}
+
+	&--articles {
+		@extend .section;
+	}
+
+	&--breadcrumbs {
+		@extend .section;
+	}
+
+	&--buttons {
 		@extend .section;
 	}
 }

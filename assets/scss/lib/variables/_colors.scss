@@ -44,7 +44,7 @@ $black: hsla(0, 0%, 1.2%, 1) !default;
 ///    .your-element {
 ///       color: $gray;
 ///    }
-$gray: hsla(208.4,7.8%,47.6%, 1) !default; /* cement-gray */
+$gray: hsla(200,7.7%,92.4%,1) !default; /* cement-gray */
 
 /// General theme color (white)
 /// @name General Color White
@@ -59,10 +59,11 @@ $white: hsla(0, 0, 100%, 1) !default;
 /// @name Code Background Color
 /// @example
 ///    .your-code-element {
-///       color: $bg-code;
+///       background-color: $bg-code;
+///       color: $code-text-color;
 ///    }
 $bg-code: hsla(0, 0%, 94.9%, 1) !default; /* light-gray */
-
+$code-text-color: hsla(359.8,100%,47.6%, 1) !default; /* pure red */
 
 /// The background color of the button
 /// @name button-[default|info|success|warning|error]

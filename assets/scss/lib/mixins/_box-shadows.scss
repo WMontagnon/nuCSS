@@ -4,10 +4,10 @@
 /// @author nuCSS
 /// @access public
 /// @example scss - Box shadow btn mixin
-///		.your-code-elment {
+///		.your_element {
 ///			@include box-shadow-btn($btn-info);
 ///		}
-/// 	// box-shadow: 2px 2px 2px 2px $btn-info;
+/// @output box-shadow: 2px 2px 2px 2px $btn-info;
 @mixin box-shadow-btn($color) {
 	box-shadow: 2px 2px 2px 2px $color;
 }

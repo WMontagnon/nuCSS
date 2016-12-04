@@ -1,0 +1,11 @@
+/// Display Flex
+/// Mixin to add add display flex layout to the component
+/// @author nuCSS
+/// @access public
+/// @todo params, example and description
+@mixin display-flex($item-direction, $justify) {
+	display: flex;
+	flex-flow: $direction;
+	justify-content: $justify;
+}
+

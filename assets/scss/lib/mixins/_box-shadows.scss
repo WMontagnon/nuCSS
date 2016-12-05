@@ -3,6 +3,7 @@
 /// according to their colors
 /// @author nuCSS
 /// @access public
+/// @params {List} 
 /// @example scss - Box shadow btn mixin
 ///		.your_element {
 ///			@include box-shadow-btn($btn-info);
@@ -10,5 +11,20 @@
 /// @output box-shadow: 2px 2px 2px 2px $btn-info;
 @mixin box-shadow-btn($color) {
 	box-shadow: 2px 2px 2px 2px $color;
+}
+
+
+/// Mixin to add box-shadow effect to cards
+/// according to their colors
+/// @author nuCSS
+/// @access public
+/// @params {List} 
+/// @example scss - Box shadow card mixin
+///		.your_element {
+///			@include box-shadow-card($card-bground);
+///		}
+/// @output box-shadow: 1px 1px 1px 1px $card-bground;
+@mixin box-shadow-card($color) {
+	box-shadow: 1px 1px 1px 1px $color;
 }
 

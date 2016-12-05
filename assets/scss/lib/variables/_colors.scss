@@ -52,25 +52,33 @@ $gray: hsla(200,7.7%,92.4%,1) !default; /* cement-gray */
 ///    .your-element {
 ///       color: $white;
 ///    }
-$white: hsla(0, 0, 100%, 1) !default;
+$white: hsla(0, 0, 100%, 1) !default; /* white */
+
+/// General theme color (white smoke)
+/// @name General Color White Smoke
+/// @example
+///    .your-element {
+///       color: $white-smoke;
+///    }
+$white-smoke: hsla(0, 0%, 96.1%, 1) !default; /* white smoke */
 
 
-/// The background color of the code blocks
+/// The background color and color of the code blocks
 /// @name Code Background Color
 /// @example
-///    .your-code-element {
+///    .your-element {
 ///       background-color: $bg-code;
 ///       color: $code-text-color;
 ///    }
 $bg-code: hsla(0, 0%, 94.9%, 1) !default; /* light-gray */
-$code-text-color: hsla(359.8,100%,47.6%, 1) !default; /* pure red */
+$code-text-color: hsla(359.8, 100%, 47.6%, 1) !default; /* pure red */
 
 /// The background color of the button
 /// @name button-[default|info|success|warning|error]
-/// @see General Color Gray
-/// @see Brand Primary
+/// @see {variable} $gray
+/// @see {variable} $brand-primary 
 /// @example
-///			.your-code-element {
+///			.your-element {
 ///				background: $btn-default; 
 ///			}
 $btn-default: $gray !default;                       /* light gray */
@@ -78,3 +86,20 @@ $btn-info: $brand-primary !default;                 /* blue */
 $btn-success: hsla(149.9, 100%, 47.6%, 1) !default; /* lime green */
 $btn-warning: hsla(45.1,100%,67.6%, 1) !default;    /* light yellow */
 $btn-error: hsla(359.8, 100%, 47.6%, 1) !default;   /* red */
+
+
+/// The background color of cards
+/// @name card
+/// @see {variable} $white-smoke
+/// @see {variable} $gray
+/// @see {variable} $brand-primary;
+/// @see {variable} $black;
+/// @example
+///			.your-element {
+///				background: $card-bground;
+///			}
+$card-header-bground: $brand-primary !default; /* blue  */
+$card-bground: $gray !default; /* gray  */
+$card-text-white: $white-smoke !default; /* white-smoke  */
+$card-text-blue: $brand-primary !default; /* blue  */
+$card-text-black: $black !default; /* black  */

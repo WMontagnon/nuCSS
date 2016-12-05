@@ -7,24 +7,25 @@
 /// if not units are passed in the argument it will throw an error
 /// @author nuCSS
 /// @access public
-/// @param { Number } $width - Width
-/// @param { Number } $height [width] - Width
+/// @param {Number} $width - Width
+/// @param {Number} $height [width] - Width
 /// @throw [width|height] cannot be unitless
 /// @example #1 scss - Size mixin
 ///		.your_element {
 ///			@include size(100vw, 100vh);
 ///		}
-/// @output .your_element { width: 100vw; height: 100vh; }
 /// @example #2 scss - Size mixin
 ///		.your_element {
 ///			@include size(100%);
 ///		}
-/// @output .your_element { width: 100%; height: 100%; }
 /// @example #3 scss - Size mixin
 ///		.your_element {
 ///			@include size(150px, 250px);
 ///		}
-/// @output .your_element { width: 150px; height: 250px; }
+/// @output
+/// 	example # 1 .your_element { width: 100vw; height: 100vh; }
+///		example # 2 .your_element { width: 100%; height: 100%; }
+/// 	example # 3 .your_element { width: 150px; height: 250px; }
 @mixin size($width, $height: $width) {
   @if unitless($width) {
     @error "$width may not be unitless, was #{$width}";

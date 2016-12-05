@@ -3,7 +3,8 @@
 // --------------------
 
 pre, code {
-	background: $bg-code;
+	background-color: $bg-code;
+	color: $code-text-color;
 	font-style: $code-font-stack;
 }
 

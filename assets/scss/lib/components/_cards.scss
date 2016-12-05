@@ -1,0 +1,51 @@
+// --------------------
+// Card styles
+// --------------------
+
+.card__container {
+  @include display-flex(row wrap, space-around);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.card {
+  @include display-flex(column, space-between);
+  @include size(250px, 300px);
+  margin: 10px;
+  box-shadow: 1px 1px 1px 3px $gray;
+  border-radius: 5px;
+  background-color: $white;
+  text-align: center;
+  font-size: 1em;
+  
+  &__header {
+    flex-basis: 15%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: 1px solid $brand-primary;
+    @include box-shadow-card($gray);
+    background-color: $card-header-bground;
+    font-size: 0.6em;	
+  }
+  
+  &__title {
+		color: $card-text-white;
+  }
+
+  &__content {
+    flex-basis: 45%;
+    border: 1px solid $gray;
+    @include box-shadow-card($gray);
+    background-color: $card-bground;
+    color: $card-text-black;
+  }
+  
+  &__footer {
+    border-top: 1px solid $gray;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    @include box-shadow-card($gray);
+    background-color: $card-bground;
+    color: $card-text-blue;
+  }
+}

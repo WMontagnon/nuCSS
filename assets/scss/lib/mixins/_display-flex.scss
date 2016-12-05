@@ -1,0 +1,23 @@
+/// Display Flex
+/// Mixin to add add display flex layout to the component
+/// @author nuCSS
+/// @access public
+/// @param {String} - $direction [row] - values of [row|column]
+/// @param {String} - $justify [space-around] - values of [space-around|space-between]
+/// @param {String} - $args [list of additional] - must be passed as $key: values
+/// @example #1 scss - Display Flex mixin
+/// 	.your_element {
+/// 		@include display-flex();
+///		}
+/// @example #2 scss - Display Flex mixin
+/// 	.your_element {
+/// 		@include display-flex(column, space-between);
+///		}
+/// @output
+///   example # 1 .your_element { display: flex; flex-flow: row; justify-content: space-around; }
+///   example # 2 .your_element { display: flex; flex-flow: column; justify-content: space-between; }
+@mixin display-flex($direction: row, $justify: space-around) {
+  display: flex;
+  flex-flow: $direction;
+  justify-content: $justify;
+}

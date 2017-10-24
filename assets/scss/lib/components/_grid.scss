@@ -1,48 +1,144 @@
 // Grid Component //
 
-.grid{
-  position: relative;
-  width: 100%;
-  max-width: $rowWidth;
-  font-size: 0;
-  margin: 0 auto;
+$grid-gutter          : 10px !default;
+$grid-small-breakpoint: 768px !default;
+$grid-large-breakpoint: 320px !default;
+$grid-side-gutter     : false !default;
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    @if ($grid-gutter > 0 and $grid-side-gutter == false) {
+        margin-left: -($grid-gutter / 2);
+        margin-right: -($grid-gutter / 2);
+    }
+
+    &__column {
+        flex: 1 0 100%;
+        @if ($grid-gutter > 0) {
+            padding-left: ($grid-gutter / 2);
+            padding-right: ($grid-gutter / 2);
+        }
+
+        // 2 cols
+        &--1-2 {
+            @include mq($grid-small-breakpoint) {
+                @include grid-column-width(1, 2);
+            }
+        }
+
+        // 3 cols
+        &--1-3 {
+            @include mq($grid-small-breakpoint) {
+                @include grid-column-width(1, 2);
+            }
+            @include mq($grid-large-breakpoint) {
+                @include grid-column-width(1, 3);
+            }
+        }
+
+        &--2-3 {
+            @include mq($grid-large-breakpoint) {
+                @include grid-column-width(2, 3);
+            }
+        }
+
+        // 4 cols
+        &--1-4 {
+            @include mq($grid-small-breakpoint) {
+                @include grid-column-width(2, 4);
+            }
+            @include mq($grid-large-breakpoint) {
+                @include grid-column-width(1, 4);
+            }
+        }
+
+        &--2-4 {
+            @include mq($grid-large-breakpoint) {
+                @include grid-column-width(2, 4);
+            }
+        }
+
+        &--3-4 {
+            @include mq($grid-large-breakpoint) {
+                @include grid-column-width(3, 4);
+            }
+        }
+
+        // 5 cols
+        &--1-5 {
+            @include mq($grid-large-breakpoint) {
+                @include grid-column-width(1, 5);
+            }
+        }
+
+        &--2-5 {
+            @include mq($grid-large-breakpoint) {
+                @include grid-column-width(2, 5);
+            }
+        }
+
+        &--3-5 {
+            @include mq($grid-large-breakpoint) {
+                @include grid-column-width(3, 5);
+            }
+        }
+
+        &--4-5 {
+            @include mq($grid-large-breakpoint) {
+                @include grid-column-width(4, 5);
+            }
+        }
+
+        // 6 cols
+        &--1-6 {
+            @include mq($grid-small-breakpoint) {
+                @include grid-column-width(2, 6);
+            }
+            @include mq($grid-large-breakpoint) {
+                @include grid-column-width(1, 6);
+            }
+        }
+
+        &--2-6 {
+            @include mq($grid-small-breakpoint) {
+                @include grid-column-width(2, 6);
+            }
+        }
+
+        &--3-6 {
+            @include mq($grid-small-breakpoint) {
+                @include grid-column-width(3, 6);
+            }
+        }
+
+        &--4-6 {
+            @include mq($grid-small-breakpoint) {
+                @include grid-column-width(4, 6);
+            }
+        }
+
+        &--5-6 {
+            @include mq($grid-large-breakpoint) {
+                @include grid-column-width(5, 6);
+            }
+        }
+    }
 }
 
-@for $i from 1 through $columnsCount {
-  .col#{$i} {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 1rem;
-    width: calc( (100% - #{(($columnsCount / $i * 2) * $columnGutter) - (2 * $columnGutter)}) /  #{$columnsCount / $i});
-    margin: 0 $columnGutter;
-    &:first-child{
-        margin-left: 0;
-    }
-    &:last-child{
-        margin-right: 0;
-    }
-    @if($columnsCount % $i == 0) {
-      &:nth-child(#{$columnsCount / $i}n + #{$columnsCount / $i + 1}){
-          margin-left: 0;
-      }
-      &:nth-child(#{$columnsCount / $i}n + #{$columnsCount / $i}){
-          margin-right: 0;
-      }
-    }
-    @media #{$small-only} {
-      @if $i <= ($columnsCount / 3) {
-        width: calc(50% - #{$columnGutter});
-        &:nth-child(even){
-          margin-right: 0;
-        }
-        &:nth-child(odd){
-          margin-left: 0;
-        }
-      } @else {
-        width: 100%;
-        margin: 0;
-      }
-    }
+.grid--preview {
+  border-bottom: 1px solid #000;
+  .grid__column {
+      margin: 10px 0;
+  }
+  .grid__content {
+      background: #eee;
+      border: 1px solid #000;
+      line-height: 50px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
   }
 }
